@@ -49,6 +49,7 @@ export class MyAuthenticationSequence implements SequenceHandler {
 
       //call authentication action
       const authUser: UserProfile | undefined = await this.authenticateRequest(request);
+      console.log(123)
       console.log(authUser)
 
       if (authUser != undefined) {
